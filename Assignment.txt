@@ -1,0 +1,32 @@
+1.
+
+javax.xml.parsers.DocumentBuilderFactory#newInstance()
+javax.xml.transform.TransformerFactory#newInstance()
+javax.xml.xpath.XPathFactory#newInstance()
+
+
+All these factory classes are abstract. The new Instance method create a new concrete instance of the factory class depending on various factors and returns it. These are then used to create objects of the required types. Thus this is a Abstract Factory Design Pattern.
+
+
+
+
+2.
+
+java.util.Arrays#asList()
+java.util.Collections#list()
+java.util.Collections#enumeration()
+java.io.InputStreamReader(InputStream) (returns a Reader)
+java.io.OutputStreamWriter(OutputStream) (returns a Writer)
+javax.xml.bind.annotation.adapters.XmlAdapter#marshal() and #unmarshal()
+
+
+All these classes implement Adapter Design Pattern.
+
+	Arrays#asList() takes an array and returns an ArrayList.
+	Collections#list() takes a Enumeration and returns an ArrayList.
+	Collections#enumeration() takes a Collection and returns an Enumeration
+	InputStreamReader() takes a InputStream object and returns a InputStreamReader
+	OutputStreamWriter() takes a OutputStream object and returns a OutputStreamWriter
+	XmlAdapter#marshal() and #unmarshal() are used to convert "Bound" type to "Value" type and vice versa.
+
+All these highlight the fact that these methods enable us to use one type of object as another i.e. they act as Adapter. Hence they implement Adapter Design Pattern.
