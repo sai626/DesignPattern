@@ -29,4 +29,4 @@ All these classes implement Adapter Design Pattern.
 	OutputStreamWriter() takes a OutputStream object and returns a OutputStreamWriter
 	XmlAdapter#marshal() and #unmarshal() are used to convert "Bound" type to "Value" type and vice versa.
 
-All these highlight the fact that these methods enable us to use one type of object as another i.e. they act as Adapter. Hence they implement Adapter Design Pattern.
+All these highlight the fact that these methods enable us to use/create one type of object as another i.e. they act as Adapter. Hence they implement Adapter Design Pattern.
